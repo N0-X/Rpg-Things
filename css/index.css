@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.tab button {
+    background-color: inherit;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #575757;
+}
+
+.tab button.active {
+    background-color: #04AA6D;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-size: 90%;
+}
+
+.requisito {
+    font-weight: bold;
+}

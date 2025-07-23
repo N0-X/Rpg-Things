@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Abas</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <h2>RPG e os caralho</h2>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Sobre')">Coisas pra Saber</button>
+        <button class="tablinks" onclick="openTab(event, 'Home')">Habilidades</button>
+        <button class="tablinks" onclick="openTab(event, 'Contato')">Créditos</button>
+    </div>
+
+    <div id="Home" class="tabcontent">
+        <h1>Escolham <big>DUAS HABILIDADES</big> de cada lista</h1>
+
+        <h2>Habilidades TIER 1</h2>
+
+        <dl>
+            <dt>Arremessos Potentes</dt>
+            <dd>Você arremessa mais potentemente. Aumenta +1dado no dano</dd>
+
+            <dt>Arsenal Cíclico</dt>
+            <dd>Caso você esteja usando uma categoria de armamento e troque para outra no meio do combate, essa nova arma terá +1 nivel de dano. Exemplo: Espada -> Machado</dd>
+
+            <dt>Assumir Postura</dt>
+            <dd>Você pode escolher de uma lista de posturas que vou mandar separado, cada uma da um bonûs e desvantagem diferentes</dd>
+
+            <dt>Erguer Guarda</dt>
+            <dd>Você gasta uma ação bonûs para levantar uma guarda forte, aumentando sua defesa. Porém poderá atacar apenas 1 vez no turno</dd>
+
+            <dt>Escudeiro Agressivo</dt>
+            <dd>Caso você segure um escudo, poderá efetuar um ataque extra com o escudo, gastando 1 PE</dd>
+
+            <dt>Extensão do Corpo</dt>
+            <dd>Você recebe +1 em ataques feitos com uma arma corpo-a-corpo e uma vantagem contra testes contra ser Desarmado</dd>
+
+            <dt>Flanqueador Superior</dt>
+            <dd>A criatura flanqueada recebe -2 em Testes de Resistência</dd>
+
+            <dt>Golpe Falso</dt>
+            <dd>Você pode efetuar um ataque falso para enganar um inimigo e ajudar seu aliado. Caso algum aliado ataque uma criatura que esteja no seu alcançe, você pode gastar sua reação para dar vantagem a seu aliado, a criatura deve fazer um TR de Ástucia, caso falhe, o aliado atacará com vantagem</dd>
+
+            <dt>Golpes Potentes</dt>
+            <dd>Você é especialmente treinado em 1 tipo de arma. Você escolherá 1 arma especifica e caso utilize essa arma e combate, ganhará +1 nivel de dano</dd>
+
+            <dt>Insistente</dt>
+            <dd>Caso falhe em algum teste, você pode gastar 1 PE para re-rolar esse teste. Usos = Metade do Nivel do personagem</dd>
+
+            <dt>Precisão Definitiva</dt>
+            <dd>Quando atacar, você pode gastar 1 PE para ganhar um bonûs de +2 para acertar ou para dar mais dano. A cada 4 niveis voce pode gastar +1 PE para aumentar o bonûs em +2 por PE gasto</dd>
+
+            <dt>Presença Suprimida</dt>
+            <dd>Você sabe se esconder muito melhor q os outros, você recebe +2 em Testes de Furtividade, porém, caso você ataque ou faça algo chamativo, você receberá um bonûs de -5 em furtividade por 1d3 rodadas</dd>
+
+            <dt>Revigorar</dt>
+            <dd>Você pode gastar sua ação bonûs para curar 1d10 + Sua constituição + 2. A cada 4 níveis, você ganha +1d10 nessa cura (Usos = 3)</dd>
+
+        </dl>
+
+        <h2>Habilidades TIER 2</h2>
+
+        <dl>
+            <dt>Aprender Postura</dt>
+            <dd>Você aprende uma postura nova da lista e aprende +1 no nível 10. <span class="requisito">[Pré-Requisito: Assumir Postura]</spam></dd>
+
+            <dt>Armas Escolhidas</dt>
+            <dd>Escolha uma categoria de armas, essa categoria ganhará +2 niveis de dano.</dd>
+
+            <dt>Arremesso Rápido</dt>
+            <dd>Ao atacar com uma arma de arremesso, você poderá gastar 1PE para atacar novamente com outra arma de arremesso</dd>
+
+            <dt>Técnicas de Avanço</dt>
+            <dd>Você ganha acesso a duas artes de combate, mandarei depois caso alguem queira</dd>
+
+            <dt>Buscar Oportunidade</dt>
+            <dd>Faça um teste de percepção (Dificuldade = 16+2xInimigos) Caso passe no teste, você pode Andar, Desengajar ou Esconder como uma Ação Livre</dd>
+
+            <dt>Grupo favorito</dt>
+            <dd>Escolha uma grupo de armas e você receberá os efeitos do critico dessa categoria</dd>
+
+            <dt>Mente Oculta</dt>
+            <dd>Você pode adicionar sua sabedoria em Testes de Furtividade</dd>
+
+            <dt>Uso rápido</dt>
+            <dd>Ao usar algum item do seu inventario, você pode gastar 1PE para usar algum item adicional</dd>
+        </dl>
+
+        <h2>Habilidades Tier 3</h2>
+
+        <dl>
+            <dt>Acervo Amplo</dt>
+            <dd>Você aprende mais 1 estilo de combate. E você pode trocar seus estilos de combate caso passe uma hora meditando ou dps de algum descanso</dd>
+
+            <dt>Ataque Extra</dt>
+            <dd>Ao realizar algum ataque você pode gastar 2PE para realizar um segundo ataque.</dd>
+
+            <dt>Crítico Melhorado</dt>
+            <dd>Você crita mais facil. Apenas o dano, não o acerto garantido</dd>
+
+            <dt>Crítico Potente</dt>
+            <dd>Você crita mais potentemente. Seus criticos ganham 1dado a mais</dd>
+
+            <dt>Defender e Revidar</dt>
+            <dd>Você pode contra atacar algum inimigo, caso você esteja com a guarda erguida, gastando 1PE. <span class="requisito">[Pré-requisito: Erguer Guarda]</span></dd>
+
+            <dt>Feitiçaria Implementada</dt>
+            <dd>Ao utilizar algum feitiço ou técnica de dano, você pode gastar 2PE para realizar um ataque contra o alvo do feitiço, gastando uma ação livre. <span class="requisito">[Pré-requisito: Treinado em Feitiçaria]</span></dd>
+
+            <dt>Fluxo Perfeito</dt>
+            <dd>As vezes, o fluxo do combate se alinha perfeitamente com seus pensamentos. Caso você acerte todos seus ataques durante 4 turnos seguidos, você ganha vantagem em ações de ataque até você errar algum</dd>
+
+            <dt>Manejo Especial</dt>
+            <dd>Você pode escolher uma propriedade de ferramenta amaldiçoada para aplicar em qualquer arma que você usar, se possivel</dd>
+
+            <dt>Preparação Rápida</dt>
+            <dd>Assumir alguma postura agora gasta uma ação livre e não é mais cancelada caso você seja empurrado. <span class="requisito">[Pré-requisito: Assumir Postura]</span></dd>
+
+        </dl>
+    </div>
+
+    <div id="Sobre" class="tabcontent">
+        <h1>Coisas úteis pra saber sobre essa porra</h1>
+        
+        <h2>Ações do Personagem</h2>
+
+        <p>Essas são ações que todo personagem tem disponivel durante um turno</p>
+        <p>Todas essas ações e ações especificas <big>Apenas contam durante combates</big>, fora dos combates o mestre que decide se você fará um teste ou não, mas ele pode se basear nessas ações se quiser</p>
+
+        <dl>
+            <dt>Acão Padrão</dt>
+            <dd>Essa é a Ação mais usada durante qualquer RPG, é a que você usa pra atacar, usar técnicas, fazer um monte de coisa</dd>
+            <dd>Exemplos: Correr, Se esconder, Agarrar algum inimigo, Esquivar, Ajudar, Procurar, explico tudo dps</dd>
+        
+            <dt>Ação Bonûs</dt>
+            <dd>É uma ação secundaria, para fazer algumas coisas mais especificas. Normalmente só é usada caso alguma habilidade diga que use essa Ação</dd>
+
+            <dt>Ação Livre</dt>
+            <dd>Uma ação raramente usada, porém útil as vezes, normalmente usada para interagir com objetos, beber poções, equipar armas, ETC</dd>
+
+            <dt>Reação</dt>
+            <dd>Como diz o nome, é a reação do personagem a algum estimulo externo, como atacar um inimigo caso ele vire as costas pra você</dd>
+
+            <dt>Movimento</dt>
+            <dd>Tecnicamente, é sim uma ação. É onde e o quanto o seu personagem pode se mover em um turno, tbm pode ser usada para ativar algumas habilidades especificas</dd>
+        </dl>
+
+        <h2>Ações Especificas</h2>
+
+        <dl>
+            <dt>Atacar</dt>
+            <dd>Literalmente, atacar. Gasta a Ação Padrão</dd>
+
+            <dt>Correr</dt>
+            <dd>Você dobra seu movimento, de 9metros para 18metros. Gasta a Ação Padrão</dd>
+
+            <dt>Se esconder</dt>
+            <dd>Você se esconde e pode atacar furtivamente ou para não ser percebido. Gasta a Ação Padrão</dd>
+
+            <dt>Agarrar algum inimigo</dt>
+            <dd>Você faz um Teste de Atletismo contra (Atletismo ou Acrobacia) da criatura, caso você ganhe, a criatura ganha a condição, "Agarrado". Gasta a Ação Padrão</dd>
+
+            <dt>Esquivar</dt>
+            <dd>Você sse concentra em evitar os ataques dos inimigos, até o seu proximo turno, qualquer ataque feito contra você tem desvantagem. Gasta a Ação Padrão</dd>
+
+            <dt>Ajudar</dt>
+            <dd>Você pode ajudar algum colega a realizar alguma tarefa. Quando você usa essa Ação, quem você ajudou ganha um bonûs dependendo da tarefa. Gasta a Ação Padrão</dd>
+
+            <dt>Procurar</dt>
+            <dd>Você ira começar a procurar e terá que fazer um Teste de Percepção ou Investigação. Gasta a Ação Padrão</dd>
+
+            <dt>Desarmar</dt>
+            <dd>Você realiza uma Ação de Ataque comum, porém, o inimigo precisa realizar um Teste de Força ou Destreza. Caso você ganhe, o ataque não causará nenhum dano, porém o inimigo irá soltar oq ele estiver segurando. Gasta a Ação Padrão</dd>
+
+        </dl>
+
+    </div>
+
+    <div id="Contato" class="tabcontent">
+        <h1>Fui eu quem fiz essa merda</h1>
+        <p>Autor: YuriDasBatatas, tambem conhecido como IannCabeça</p>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
