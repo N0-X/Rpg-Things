@@ -11,9 +11,21 @@
     <h2>RPG e os caralho</h2>
 
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Sobre')">Coisas pra Saber</button>
+        <button class="tablinks" onclick="openTab(event, 'Intro')">Introdução</button>
+        <button class="tablinks" onclick="openTab(event, 'Actions')">Ações</button>
+        <button class="tablinks" onclick="openTab(event, 'Conditions')">Condições</button>
         <button class="tablinks" onclick="openTab(event, 'Home')">Habilidades (TEMP)</button>
-        <button class="tablinks" onclick="openTab(event, 'Contato')">Créditos</button>
+        <button class="tablinks" onclick="openTab(event, 'MetaGame')">MetaGame</button>
+        <button class="tablinks" onclick="openTab(event, 'Credits')">Créditos</button>
+    </div>
+
+    <div id="Intro" class="tabcontent">
+        <h2>Bem-Vindo a essa <big>merda</big> de guia</h2>
+
+        <p>O intuito desse "site" é para ajudar vocês que não sabem do básico do RPG de Mesa.</p>
+        <h3><big style="color: red;">AVISO</big> Você talvez serja xingado e a maioria das coisas aqui serão escritas de maneira burra</h3>
+        <dd>Então, caso tenha duvidas, vá pesquisar ou perguntar para o Autor desse lixo</dd>
+
     </div>
 
     <div id="Home" class="tabcontent">
@@ -127,10 +139,9 @@
         </dl>
     </div>
 
-    <div id="Sobre" class="tabcontent">
-        <h1>Coisas úteis pra saber sobre essa porra</h1>
-        
+    <div id="Actions" class="tabcontent">
         <h2>Ações do Personagem</h2>
+        <h3>Essas ações foram tiradas do D&D5e</h3>
 
         <p>Essas são ações que todo personagem tem disponivel durante um turno</p>
         <p>Todas essas ações e ações especificas <big>Apenas contam durante combates</big>, fora dos combates o mestre que decide se você fará um teste ou não, mas ele pode se basear nessas ações se quiser</p>
@@ -184,9 +195,91 @@
 
     </div>
 
-    <div id="Contato" class="tabcontent">
+    <div id="Conditions" class="tabcontent">
+        <h2>Condições</h2>
+        <h3>Usarei as condições presentes no sistema do D&D5e, porém apenas darei uma descrição e talvez seu funcionamento no sistema como um exemplo</h3>
+
+        <p>Condições são estados que os personagens ou inimigos podem receber caso algum requisito seja completado. Condições normalmente são colocadas em algum personagem ou inimigo quando se usa alguma ação especial, magia ou habilidade</p>
+
+        <h2>Lista de Condições</h2>
+
+        <dl>
+            <dt>Agarrado</dt>
+            <dd>Você está sendo agarrado por algo ou alguem e não pode se mexer</dd>
+
+            <dt>Amedontrado / Assustado</dt>
+            <dd>Algo aterrorizante está atualmente atormentando sua mente, o mestre pode decidir os efeitos disso, mas no D&D5e, você simplesmente não pode chegar perto da criatura</dd>
+
+            <dt>Atordoado</dt>
+            <dd>Algum impacto forte ou algum estimulo sensorial mt forte para sua mente te deixaram atordoado e desorientado</dd>
+
+            <dt>Caído</dt>
+            <dd>Sim, isso é uma condição. Simplesmente caído no chão e você precisa se levantar. Normalmente é mais facil acertar alguem caído</dd>
+
+            <dt>Cego</dt>
+            <dd>Cego porra, tu não enxerga ou não vê quase nada</dd>
+
+            <dt>Concentrado</dt>
+            <dd>Você ta se concentrando em algo. Isso é uma mecânica no D&D5e, algumas magias você precisa estar concentrado nela pra ela se manter ativa</dd>
+
+            <dt>Contido</dt>
+            <dd>Você está sendo preso por algo, normalmente não algo vivo, você está preso e provavelmente não consegue se mexer facilmente</dd>
+
+            <dt>Enfeitiçado</dt>
+            <dd>Você foi encantado por algo, uma sucubo gostosa ou algum mago fdp. O mestre diz oq isso faz, no D&D5e você não consegue atacar quem te enfeitiçou</dd>
+
+            <dt>Envenenado</dt>
+            <dd>Possivelmente a condição mais famosa de qualquer sistema. Bem óbvia, o personagem foi envenenado e os efeitos dependem do veneno usado. Essa condição tbm é usada para caso você coma algo estragado</dd>
+
+            <dt>Incapacitado</dt>
+            <dd>Você tá todo fudido e não consegue fazer praticamente nada</dd>
+
+            <dt>Inconsciente</dt>
+            <dd>Desmaiou e tá mais fudido que o Incapacitado, você tá mole no chão todo broxa</dd>
+
+            <dt>Invisivel</dt>
+            <dd>Tu é transparente ou quase isso. O mestre decide se tu ta completamente invisivel ou se só é dificil te ver</dd>
+
+            <dt>Paralisado</dt>
+            <dd>Praticamente igual ao insconsciente, só que tu tá consciente, só não pode fazer nada</dd>
+
+            <dt>Petrificado</dt>
+            <dd>Obviamente, tu virou pedra ou algo parecido</dd>
+
+            <dt>Surdo</dt>
+            <dd>Tu tá surdo porra, ou quase isso, preciso explicar mais?</dd>
+
+            <dt>Cansado ou Exausto</dt>
+            <dd>Isso que tu leu. Essa é uma mecânica opcional no D&D5e que funciona de maneira progressiva</dd>
+        </dl>
+
+    </div>
+
+    <div id="Credits" class="tabcontent">
         <h1>Fui eu quem fiz essa merda</h1>
         <p>Autor: YuriDasBatatas, tambem conhecido como IannCabeça</p>
+    </div>
+
+    <div id="MetaGame" class="tabcontent">
+
+        <h2>O que é Metagaming</h2>
+        <p>Meta gaming é, resumidamente, usar seus conhecimentos externos sobre o sistema ou sobre a hístoria, tomando ações que fogem dos conhecimentos do seu personagem.</p>
+        <p>Por exemplo:</p>
+        <dd>O mestre deixou escapar sem querer que Filipinho é um traidor, ninguem sabe disso. Aí mais tarde, você acusa ou ataca esse personagem por causa dessa informação, <b>isso é metagame</b>. Os personagens não sabem dessa informação e não tem pq suspeitarem de Filipinho, você só sabe disso pq o mestre boca-frouxa deixou isso escapar</dd>
+        <br>
+        <dd>Vocês estão lutando contra um monstro que é fraco contra dano ácido, nenhum personagem sabe disso ou tem motivo pra suspeitar dessa fraqueza. Aí um dos jogadores fala que ele é fraco contra ácidos e começa a usar magias de dano ácido ou frascos de ácido que alguns alquimistas carregam, <b>isso é metagame</b></dd>
+
+        <p>Metagame é um problema por vários motivos:</p>
+        <ul>
+            <li>É prejudicial para o roleplay do RPG</li>
+            <li>Pode acarretar em discussões com o mestre e outros jogadores</li>
+            <li>Dá uma vantagem injusta pra quem faz o Metagame</li>
+        </ul>
+
+        <p>Metagame nem sempre é por maldade. Muitos iniciantes podem acabar se esquecendo ou não sabem separar o personagem do jogador</p>
+        <p>Metagame tbm pode acontecer durante discussões entre os jogadores, durante o combate, falar que habilidade o outro deve usar ou oq fazer não é muita coisa mas tbm pode ser considerado metagame depois de um certo ponto</p>
+        <p>O certo é nunca fazer metagame e seguir com um jogo justo e divertido para todos, mas a questão é essa, alguns grupos gostam de fazer planos levando as habilidades dos outros em conta. Na duvida, usem aqueles dois exemplos do inicio como guias sobre oq não fazer</p>
+
     </div>
 
     <script src="script/script.js"></script>
